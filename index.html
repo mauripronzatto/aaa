@@ -1,0 +1,25 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 03</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Ejercicio 03: </h1>
+  <div id="resultado" class="resultado"></div>
+  <script src="ejercicio03.js"></script>
+<script>
+let valor = 50;
+
+if (valor >= 100 && valor <= 300) {
+  document.getElementById("resultado").innerText = " El valor está en el rango 100-300.";
+  document.getElementById("resultado").classList.add("ok");
+} else {
+  document.getElementById("resultado").innerText = " El valor está fuera del rango 100-300.";
+  document.getElementById("resultado").classList.add("error");
+}
+
+</script>
+</body>
+</html>
